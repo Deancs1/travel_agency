@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+   
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/time-travel-agency/images/background-image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+
+
+  header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    /*border-bottom: 2px solid blue;*/
+    background: rgba(225, 187, 97, 0.5);
+       
+  }
+
+  @media (max-width: 600px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+  }
+
+  header img {
+
+    display: fleblx;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    margin: 1rem auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  header h2 {
+    text-align: center;
+    color:(1, 77, 78);
+    font-size: 3em;
+    text-shadow: 3px 3px 6px;
+  }
+
+  header h3 {
+    text-align: center;
+    color: red;
+    font-style: italic;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 3px;
+    margin: 3px;
+  }
+
+  header nav li {
+    flex: 1;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  header nav a, footer a {
+    
+    padding: 0 0.5em;
+    text-decoration: none;
+    color:black;
+
+  }
+
+  header nav a:hover, footer a:hover {
+    text-decoration: underline;
+  }
+
+  main {
+    padding: 1em;
+  }
+
+  
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.service {
+    flex-grow: 1;
+    margin: 1em;
+    padding: 1.5em;
+    background-color: gainsboro;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.service h3 {
+    padding-bottom: 0.5em;
+}
+
+
+  .gallery-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1em;
+   margin-top: 1em;
+   
+}
+
+.gallery-grid img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+ @media (max-width: 600px) {
+    .services-container {
+      flex-direction: column;
+    
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+ @media (min-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+ }
+
+ 
